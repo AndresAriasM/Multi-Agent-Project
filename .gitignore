@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Imagenes
+*.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+*.parquet
+*.csv
+output/*.pptx
+output/*.pdf
+data/local/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
