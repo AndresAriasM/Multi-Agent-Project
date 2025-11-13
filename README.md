@@ -20,7 +20,7 @@ Todo con resultados descargables en **Excel** y **PowerPoint**.
 
 ### 1. Clonar/Descargar el proyecto
 ```bash
-git clone <url-repositorio>
+git clone https://github.com/AndresAriasM/Multi-Agent-Project.git
 cd Multi-Agent-Project
 ```
 
