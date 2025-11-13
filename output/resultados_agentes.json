@@ -1,0 +1,111 @@
+{
+  "denominacion": {
+    "denominaciones_totales": [
+      "Ciencia de Datos"
+    ],
+    "cantidad_variaciones": "1",
+    "analisis_ia": {
+      "denominacion_oficial": "Ciencia de Datos",
+      "variaciones_encontradas": [
+        "Ciencia de Datos"
+      ],
+      "patrones": {
+        "con_nivel": "5"
+      },
+      "palabras_clave": [
+        "Ciencia",
+        "Datos"
+      ],
+      "clasificacion": "Doctorado",
+      "internacionales": [
+        "PhD"
+      ],
+      "hallazgos": [
+        "La denominación es consistente y estandarizada en el contexto colombiano para programas de nivel de doctorado en ciencia de datos."
+      ]
+    },
+    "estadisticas": {
+      "total_variaciones": "1",
+      "palabras_unicas": "3",
+      "longitud_promedio": "3.0",
+      "palabras_mas_frecuentes": {
+        "ciencia": "1",
+        "de": "1",
+        "datos": "1"
+      }
+    }
+  },
+  "tendencias": {
+    "palabras_emergentes": [
+      "inteligencia artificial",
+      "aprendizaje automático",
+      "big data",
+      "analítica predictiva"
+    ],
+    "palabras_decadentes": [
+      "programación básica",
+      "estadística tradicional"
+    ],
+    "tendencias_nacionales": {
+      "tendencia": "Incremento en programas de especialización en ciencia de datos"
+    },
+    "tendencias_globales": {
+      "tendencia": "Integración de ciencia de datos en diferentes disciplinas"
+    },
+    "analisis_ia": {
+      "emergentes": [
+        "inteligencia artificial",
+        "aprendizaje automático",
+        "big data",
+        "analítica predictiva"
+      ],
+      "decadentes": [
+        "programación básica",
+        "estadística tradicional"
+      ],
+      "nacionales": {
+        "tendencia": "Incremento en programas de especialización en ciencia de datos"
+      },
+      "globales": {
+        "tendencia": "Integración de ciencia de datos en diferentes disciplinas"
+      },
+      "innovacion": [
+        "uso de plataformas en la nube",
+        "aprendizaje basado en proyectos"
+      ],
+      "recomendaciones": [
+        "Fomentar alianzas con la industria",
+        "Actualizar currículos con tecnologías emergentes"
+      ]
+    },
+    "estadisticas": {
+      "total_periodos": "0",
+      "instituciones": "0",
+      "programas": "0",
+      "departamentos": "0"
+    }
+  },
+  "sintesis": {
+    "programa": "Ciencia de Datos",
+    "denominacion_oficial": "Ciencia de Datos",
+    "resumen_ejecutivo": "Resumen Ejecutivo: Programa de Ciencia de Datos\n\nEl programa de Ciencia de Datos, denominado oficialmente como Ciencia de Datos, responde a la creciente demanda de profesionales capacitados en el análisis, interpretación y gestión de grandes volúmenes de información en diversos sectores económicos y sociales. Su objetivo principal es formar expertos capaces de aplicar metodologías estadísticas, algoritmos de aprendizaje automático y técnicas de visualización para transformar datos en conocimientos estratégicos.\n\nEste programa combina fundamentos teóricos en matemáticas, estadística y programación, con aplicaciones prácticas en áreas como inteligencia artificial, minería de datos y análisis predictivo. La estructura curricular incluye módulos especializados en procesamiento de datos, modelado estadístico, inteligencia artificial y ética en el manejo de información, garantizando una formación integral y actualizada.\n\nEl programa está dirigido a estudiantes con interés en tecnología, análisis y resolución de problemas complejos, y busca potenciar habilidades analíticas, de innovación y trabajo en equipo. Además, promueve la investigación y la vinculación con el sector productivo, facilitando la inserción laboral y el desarrollo de proyectos de impacto social y económico.\n\nCon un enfoque en la formación de profesionales altamente competentes, el programa de Ciencia de Datos contribuye a fortalecer la capacidad del país para afrontar los desafíos de la era digital, promoviendo la innovación y la toma de decisiones basada en evidencia. Se posiciona como una oferta académica de vanguardia, alineada con las tendencias globales en educación superior y desarrollo tecnológico.",
+    "hallazgos_principales": [
+      "La denominación es consistente y estandarizada en el contexto colombiano para programas de nivel de doctorado en ciencia de datos.",
+      "Palabras emergentes: inteligencia artificial, aprendizaje automático, big data",
+      "Se encontraron 1 variaciones del programa"
+    ],
+    "recomendaciones": [
+      "Clasificar como: Doctorado",
+      "Incorporar términos: inteligencia artificial, aprendizaje automático",
+      "Actualizar denominación en sistemas académicos",
+      "Revisar equivalencias internacionales"
+    ],
+    "proximos_pasos": [
+      "Validar denominación con expertos",
+      "Implementar cambios sugeridos",
+      "Monitorear tendencias periódicamente"
+    ]
+  },
+  "programa": "Ciencia de Datos",
+  "timestamp": "2025-11-12 19:38:38"
+}

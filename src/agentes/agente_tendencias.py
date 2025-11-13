@@ -1,8 +1,13 @@
 """
 Agente que detecta tendencias de palabras clave
+Ubicación: src/agentes/agente_tendencias.py
 """
+
 from typing import Dict, List
 import pandas as pd
+import json
+from .llm_handler import LLMHandler
+
 
 class AgenteTendencias:
     """Detecta tendencias en palabras clave de programas"""
@@ -10,39 +15,77 @@ class AgenteTendencias:
     def __init__(self, datos: Dict):
         self.datos = datos
         self.maestro = datos.get('maestro', pd.DataFrame())
+        try:
+            self.llm = LLMHandler()
+        except Exception as e:
+            print(f"⚠️  Error inicializando LLMHandler: {e}")
+            self.llm = None
     
     def analizar(self) -> Dict:
         """Analiza tendencias de palabras clave"""
+        print("📈 Analizando tendencias...")
+        
+        programa = self.datos.get('nombre', 'Programa')
+        
+        if not self.llm:
+            print("⚠️  LLMHandler no disponible, usando análisis básico")
+            return self._analisis_basico()
+        
+        try:
+            # Llamar a Azure OpenAI
+            respuesta_ia = self.llm.analizar_tendencias(programa)
+            
+            # Si es dict, es JSON parseado
+            if isinstance(respuesta_ia, dict):
+                analisis_ia = respuesta_ia
+            else:
+                # Si es string, intentar parsear
+                try:
+                    analisis_ia = json.loads(respuesta_ia)
+                except:
+                    analisis_ia = self._analisis_basico()
+                    
+        except Exception as e:
+            print(f"⚠️  Error en IA: {e}, usando análisis básico")
+            analisis_ia = self._analisis_basico()
+        
         resultados = {
-            'tendencia_temporal': self._analizar_tendencia_temporal(),
-            'palabras_emergentes': self._identificar_emergentes(),
-            'comparativa_nacional': self._analisis_nacional(),
-            'tendencias_globales': self._tendencias_globales()
+            'palabras_emergentes': analisis_ia.get('emergentes', []),
+            'palabras_decadentes': analisis_ia.get('decadentes', []),
+            'tendencias_nacionales': analisis_ia.get('nacionales', {}),
+            'tendencias_globales': analisis_ia.get('globales', {}),
+            'analisis_ia': analisis_ia,
+            'estadisticas': self._calcular_estadisticas()
         }
+        
         return resultados
     
-    def _analizar_tendencia_temporal(self) -> Dict:
-        """Analiza tendencia en el tiempo"""
+    def _analisis_basico(self) -> Dict:
+        """Análisis básico sin IA"""
         return {
-            'resumen': 'Análisis de tendencia temporal de palabras clave',
-            'periodos': []
+            'emergentes': ['Transformación digital', 'Sostenibilidad', 'Innovación'],
+            'decadentes': [],
+            'nacionales': {'tendencia': 'Crecimiento en programas STEM'},
+            'globales': {'tendencia': 'Énfasis en competencias digitales'},
+            'innovacion': ['Metodologías híbridas'],
+            'recomendaciones': ['Análisis básico']
         }
     
-    def _identificar_emergentes(self) -> List[str]:
-        """Identifica palabras emergentes"""
-        return ['innovación', 'sostenibilidad', 'transformación digital']
-    
-    def _analisis_nacional(self) -> Dict:
-        """Analiza tendencias a nivel nacional"""
-        return {
-            'total_programas': len(self.datos.get('equivalentes', [])),
-            'distribucion': 'Nacional'
+    def _calcular_estadisticas(self) -> Dict:
+        """Calcula estadísticas"""
+        if self.maestro.empty:
+            return {
+                'total_periodos': 0,
+                'instituciones': 0,
+                'programas': 0,
+                'departamentos': 0
+            }
+        
+        stats = {
+            'total_periodos': self.maestro['PERIODO'].nunique() if 'PERIODO' in self.maestro.columns else 0,
+            'instituciones': self.maestro['CODIGO_INSTITUCION_x'].nunique() if 'CODIGO_INSTITUCION_x' in self.maestro.columns else 0,
+            'programas': self.maestro['CODIGO_SNIES'].nunique() if 'CODIGO_SNIES' in self.maestro.columns else 0,
+            'departamentos': self.maestro['DEPARTAMENTO_PROGRAMA'].nunique() if 'DEPARTAMENTO_PROGRAMA' in self.maestro.columns else 0
         }
-    
-    def _tendencias_globales(self) -> Dict:
-        """Analiza tendencias globales (internacional)"""
-        return {
-            'tendencias': ['AI', 'Sustainability', 'Digital Transformation'],
-            'relevancia_local': 'Alta'
-        }
-
+        
+        return stats
