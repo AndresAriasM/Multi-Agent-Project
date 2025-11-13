@@ -1,6 +1,7 @@
 """
-Agente que analiza denominación de programas académicos
+Agente que analiza denominación de programas académicos CON CONTEXTO ENRIQUECIDO
 Ubicación: src/agentes/agente_denominacion.py
+REEMPLAZA completamente el archivo anterior
 """
 
 from typing import Dict, List
@@ -9,11 +10,12 @@ from .llm_handler import LLMHandler
 
 
 class AgenteDenominacion:
-    """Analiza nombres y denominaciones de programas"""
+    """Analiza nombres y denominaciones de programas con contexto del mercado"""
     
     def __init__(self, datos: Dict):
         self.datos = datos
         self.programas = datos.get('equivalentes', [])
+        self.datos_enriquecidos = datos.get('datos_enriquecidos', {})
         try:
             self.llm = LLMHandler()
         except Exception as e:
@@ -21,20 +23,32 @@ class AgenteDenominacion:
             self.llm = None
     
     def analizar(self) -> Dict:
-        """Realiza análisis de denominación"""
+        """Realiza análisis de denominación con contexto enriquecido"""
         print("🔍 Analizando denominación de programas...")
         
         denominaciones_unicas = list(set(self.programas))
+        
+        # Obtener contexto enriquecido si está disponible
+        contexto_mercado = self.datos_enriquecidos.get('contexto_mercado', {})
+        instituciones = self.datos_enriquecidos.get('instituciones', {})
+        modalidades = self.datos_enriquecidos.get('modalidades', {})
+        duracion = self.datos_enriquecidos.get('duracion', {})
+        matriculas = self.datos_enriquecidos.get('matriculas', {})
         
         if not self.llm:
             print("⚠️  LLMHandler no disponible, usando análisis básico")
             return self._analisis_basico()
         
         try:
-            # Llamar a Azure OpenAI
-            respuesta_ia = self.llm.analizar_denominacion(
+            # Llamar a Azure OpenAI CON CONTEXTO ENRIQUECIDO
+            respuesta_ia = self.llm.analizar_denominacion_con_contexto(
                 denominaciones_unicas,
-                self.datos.get('nombre', 'Programa Académico')
+                self.datos.get('nombre', 'Programa Académico'),
+                contexto_mercado,
+                instituciones,
+                modalidades,
+                duracion,
+                matriculas
             )
             
             # Si es dict, es JSON parseado
@@ -55,7 +69,13 @@ class AgenteDenominacion:
             'denominaciones_totales': denominaciones_unicas,
             'cantidad_variaciones': len(denominaciones_unicas),
             'analisis_ia': analisis_ia,
-            'estadisticas': self._calcular_estadisticas()
+            'estadisticas': self._calcular_estadisticas(),
+            'contexto_mercado_resumido': {
+                'competencia': contexto_mercado.get('competencia', {}),
+                'acreditacion': contexto_mercado.get('acreditacion', {}),
+                'demanda': contexto_mercado.get('demanda', {}),
+                'sector': contexto_mercado.get('sector', {}),
+            }
         }
         
         return resultados
@@ -69,7 +89,8 @@ class AgenteDenominacion:
             'palabras_clave': self._extraer_palabras_comunes(),
             'clasificacion': self._clasificar_programa(),
             'equivalentes_internacionales': ['PhD', 'Master'],
-            'hallazgos': ['Análisis básico']
+            'hallazgos': ['Análisis básico sin contexto de IA'],
+            'contexto_del_mercado': self._generar_contexto_basico()
         }
     
     def _calcular_estadisticas(self) -> Dict:
@@ -122,3 +143,15 @@ class AgenteDenominacion:
             return 'Especialización'
         else:
             return 'Otro'
+    
+    def _generar_contexto_basico(self) -> Dict:
+        """Genera contexto básico sin IA"""
+        contexto_mercado = self.datos_enriquecidos.get('contexto_mercado', {})
+        
+        return {
+            'competencia_total': contexto_mercado.get('competencia', {}).get('total_instituciones', 'N/A'),
+            'tipo_institucion_dominante': 'Universidades' if contexto_mercado.get('competencia', {}).get('universidades', 0) > 5 else 'Variado',
+            'sector_dominante': 'Privado' if contexto_mercado.get('sector', {}).get('porcentaje_privado', 0) > 50 else 'Oficial',
+            'nivel_demanda': contexto_mercado.get('demanda', {}).get('nivel_demanda', 'Desconocido'),
+            'mercado_homogeneo': contexto_mercado.get('precios', {}).get('mercado_homogeneo', False),
+        }

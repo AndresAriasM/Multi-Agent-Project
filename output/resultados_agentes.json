@@ -1,102 +1,120 @@
 {
   "denominacion": {
     "denominaciones_totales": [
-      "Ciencia de Datos"
+      "Ingenieria Produccion Agricola",
+      "Ingenieria Agricola",
+      "Maestria Ingenieria Ingenieria Agricola"
     ],
-    "cantidad_variaciones": "1",
+    "cantidad_variaciones": "3",
     "analisis_ia": {
-      "denominacion_oficial": "Ciencia de Datos",
+      "denominacion_oficial": "Ingeniería Agrícola",
       "variaciones_encontradas": [
-        "Ciencia de Datos"
+        "Ingeniería Producción Agrícola",
+        "Ingeniería Agrícola",
+        "Maestría en Ingeniería Agrícola"
       ],
       "patrones": {
         "con_nivel": "5"
       },
       "palabras_clave": [
-        "Ciencia",
-        "Datos"
+        "Agricultura",
+        "Ingeniería",
+        "Producción",
+        "Sostenibilidad",
+        "Innovación"
       ],
-      "clasificacion": "Doctorado",
+      "clasificacion": "Pregrado",
       "internacionales": [
-        "PhD"
+        "Agricultural Engineering"
       ],
+      "posicionamiento_mercado": {
+        "competencia_nivel": "Medio",
+        "saturacion": "Media",
+        "diferenciadores": [
+          "Enfoque en sostenibilidad y tecnología agrícola avanzada"
+        ],
+        "tendencia": "estable"
+      },
+      "recomendaciones_competitivas": [
+        "Definir claramente la denominación para evitar confusiones",
+        "Fortalecer la comunicación de diferenciadores tecnológicos y sostenibles"
+      ],
+      "oportunidades_diferenciacion": [
+        "Integrar especializaciones en agricultura de precisión y biotecnología agrícola"
+      ],
+      "valor_para_estudiante": "Este programa prepara profesionales capaces de innovar en la producción agrícola sostenible, con habilidades en tecnología y gestión, respondiendo a las demandas del sector agroindustrial.",
       "hallazgos": [
-        "La denominación es consistente y estandarizada en el contexto colombiano para programas de nivel de doctorado en ciencia de datos."
+        "La variación en denominaciones puede generar confusión en el mercado, por lo que una denominación estandarizada facilitará el posicionamiento y reconocimiento."
       ]
     },
     "estadisticas": {
-      "total_variaciones": "1",
-      "palabras_unicas": "3",
+      "total_variaciones": "3",
+      "palabras_unicas": "4",
       "longitud_promedio": "3.0",
       "palabras_mas_frecuentes": {
-        "ciencia": "1",
-        "de": "1",
-        "datos": "1"
+        "ingenieria": "4",
+        "agricola": "3",
+        "produccion": "1",
+        "maestria": "1"
       }
+    },
+    "contexto_mercado_resumido": {
+      "competencia": {},
+      "acreditacion": {},
+      "demanda": {},
+      "sector": {}
     }
   },
   "tendencias": {
     "palabras_emergentes": [
-      "inteligencia artificial",
-      "aprendizaje automático",
-      "big data",
-      "analítica predictiva"
+      "transformación digital",
+      "sostenibilidad"
     ],
-    "palabras_decadentes": [
-      "programación básica",
-      "estadística tradicional"
-    ],
+    "palabras_decadentes": [],
     "tendencias_nacionales": {
-      "tendencia": "Incremento en programas de especialización en ciencia de datos"
+      "tendencia": "Crecimiento STEM"
     },
     "tendencias_globales": {
-      "tendencia": "Integración de ciencia de datos en diferentes disciplinas"
+      "tendencia": "Competencias digitales"
     },
     "analisis_ia": {
       "emergentes": [
-        "inteligencia artificial",
-        "aprendizaje automático",
-        "big data",
-        "analítica predictiva"
+        "transformación digital",
+        "sostenibilidad"
       ],
-      "decadentes": [
-        "programación básica",
-        "estadística tradicional"
-      ],
+      "decadentes": [],
       "nacionales": {
-        "tendencia": "Incremento en programas de especialización en ciencia de datos"
+        "tendencia": "Crecimiento STEM"
       },
       "globales": {
-        "tendencia": "Integración de ciencia de datos en diferentes disciplinas"
+        "tendencia": "Competencias digitales"
       },
       "innovacion": [
-        "uso de plataformas en la nube",
-        "aprendizaje basado en proyectos"
+        "metodologías híbridas"
       ],
       "recomendaciones": [
-        "Fomentar alianzas con la industria",
-        "Actualizar currículos con tecnologías emergentes"
+        "Actualizar"
       ]
     },
     "estadisticas": {
-      "total_periodos": "0",
-      "instituciones": "0",
-      "programas": "0",
-      "departamentos": "0"
+      "total_periodos": "50",
+      "instituciones": "8",
+      "programas": "15",
+      "departamentos": "9"
     }
   },
   "sintesis": {
-    "programa": "Ciencia de Datos",
-    "denominacion_oficial": "Ciencia de Datos",
-    "resumen_ejecutivo": "Resumen Ejecutivo: Programa de Ciencia de Datos\n\nEl programa de Ciencia de Datos, denominado oficialmente como Ciencia de Datos, responde a la creciente demanda de profesionales capacitados en el análisis, interpretación y gestión de grandes volúmenes de información en diversos sectores económicos y sociales. Su objetivo principal es formar expertos capaces de aplicar metodologías estadísticas, algoritmos de aprendizaje automático y técnicas de visualización para transformar datos en conocimientos estratégicos.\n\nEste programa combina fundamentos teóricos en matemáticas, estadística y programación, con aplicaciones prácticas en áreas como inteligencia artificial, minería de datos y análisis predictivo. La estructura curricular incluye módulos especializados en procesamiento de datos, modelado estadístico, inteligencia artificial y ética en el manejo de información, garantizando una formación integral y actualizada.\n\nEl programa está dirigido a estudiantes con interés en tecnología, análisis y resolución de problemas complejos, y busca potenciar habilidades analíticas, de innovación y trabajo en equipo. Además, promueve la investigación y la vinculación con el sector productivo, facilitando la inserción laboral y el desarrollo de proyectos de impacto social y económico.\n\nCon un enfoque en la formación de profesionales altamente competentes, el programa de Ciencia de Datos contribuye a fortalecer la capacidad del país para afrontar los desafíos de la era digital, promoviendo la innovación y la toma de decisiones basada en evidencia. Se posiciona como una oferta académica de vanguardia, alineada con las tendencias globales en educación superior y desarrollo tecnológico.",
+    "programa": "Ingenieria Agricola",
+    "denominacion_oficial": "Ingeniería Agrícola",
+    "resumen_ejecutivo": "Resumen Ejecutivo del Programa de Ingeniería Agrícola\n\nEl programa de Ingeniería Agrícola, también denominado Ingeniería Agrícola, tiene como objetivo formar profesionales altamente capacitados para diseñar, gestionar y optimizar sistemas agrícolas sostenibles y tecnológicamente innovadores. En un contexto global de creciente demanda de alimentos, recursos naturales limitados y desafíos ambientales, la carrera responde a la necesidad de ingenieros especializados en la aplicación de conocimientos científicos y tecnológicos en el sector agrícola.\n\nEl plan de estudios combina fundamentos en ciencias básicas, ingeniería y ciencias agrícolas, promoviendo habilidades en gestión de recursos hídricos, maquinaria agrícola, manejo de suelos, agroindustria y tecnologías de información aplicadas a la agricultura. La formación se complementa con prácticas en campo, proyectos de investigación y alianzas con el sector productivo, garantizando una formación integral y orientada a la innovación.\n\nEl programa busca contribuir al desarrollo sostenible del sector agrícola, fomentando la adopción de prácticas eficientes y responsables que aseguren la productividad y la conservación del medio ambiente. Además, prepara a los egresados para afrontar los retos del cambio climático, la seguridad alimentaria y la innovación tecnológica en el ámbito agrícola.\n\nCon un enfoque en la formación de ingenieros con visión integral, ética profesional y capacidad de liderazgo, el programa de Ingeniería Agrícola aspira a ser un referente en la formación de profesionales que impulsen el progreso agrícola y rural, promoviendo un desarrollo económico y social sustentable en la región y el país.",
     "hallazgos_principales": [
-      "La denominación es consistente y estandarizada en el contexto colombiano para programas de nivel de doctorado en ciencia de datos.",
-      "Palabras emergentes: inteligencia artificial, aprendizaje automático, big data",
-      "Se encontraron 1 variaciones del programa"
+      "La variación en denominaciones puede generar confusión en el mercado, por lo que una denominación estandarizada facilitará el posicionamiento y reconocimiento.",
+      "Palabras emergentes: transformación digital, sostenibilidad",
+      "Se encontraron 3 variaciones del programa"
     ],
     "recomendaciones": [
-      "Clasificar como: Doctorado",
-      "Incorporar términos: inteligencia artificial, aprendizaje automático",
+      "Clasificar como: Pregrado",
+      "Incorporar términos: transformación digital, sostenibilidad",
       "Actualizar denominación en sistemas académicos",
       "Revisar equivalencias internacionales"
     ],
@@ -106,6 +124,6 @@
       "Monitorear tendencias periódicamente"
     ]
   },
-  "programa": "Ciencia de Datos",
-  "timestamp": "2025-11-12 19:38:38"
+  "programa": "Ingenieria Agricola",
+  "timestamp": "2025-11-12 20:29:15"
 }

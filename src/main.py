@@ -30,18 +30,14 @@ def _buscar_programa_mejorado(lector, programa_buscar: str) -> dict:
     
     print(f"\n🔍 Búsqueda mejorada de: '{programa_buscar}'")
     
-    # PASO 0: Obtener datos disponibles del lector
+    # PASO 0: Obtener datos del lector
     programas_list = None
-    maestro_df = None
-    oferta_df = None
     
-    # Intentar obtener programas
-    if hasattr(lector, 'programas'):
-        p = lector.programas
-        if isinstance(p, list):
-            programas_list = p
-        elif isinstance(p, pd.DataFrame):
-            programas_list = p['PROGRAMA_ACADEMICO'].unique().tolist() if 'PROGRAMA_ACADEMICO' in p.columns else p.values.tolist()
+    # Acceder a los datos YA CARGADOS en el lector
+    if hasattr(lector, 'datos') and 'programas' in lector.datos:
+        p = lector.datos['programas']
+        if isinstance(p, pd.DataFrame):
+            programas_list = p['PROGRAMA_ACADEMICO'].unique().tolist()
     
     if programas_list is None or len(programas_list) == 0:
         print("⚠️  No se encontraron programas en el lector")
@@ -50,10 +46,10 @@ def _buscar_programa_mejorado(lector, programa_buscar: str) -> dict:
     print(f"📌 Programas disponibles: {len(programas_list)}")
     
     # PASO 1: Preparar palabras de búsqueda
-    palabras_comunes = {'de', 'la', 'el', 'y', 'en', 'a', 'o', 'los', 'las', 'un', 'una'}
+    palabras_comunes = {'de', 'la', 'el', 'y', 'en', 'a', 'o', 'los', 'las', 'un', 'una', 'del', 'con'}
     programa_palabras = set(p.lower() for p in programa_buscar.split() if p.lower() not in palabras_comunes)
     
-    # Palabras OBLIGATORIAS (primeras 2 palabras significativas)
+    # Palabras OBLIGATORIAS
     palabras_ordenadas = [p.lower() for p in programa_buscar.split() if p.lower() not in palabras_comunes]
     requerido = set(palabras_ordenadas[:2]) if len(palabras_ordenadas) >= 2 else set(palabras_ordenadas)
     
@@ -63,21 +59,18 @@ def _buscar_programa_mejorado(lector, programa_buscar: str) -> dict:
     n = len(programa_palabras) if len(programa_palabras) > 0 else 1
     umbral_jaccard = (n - 1) / n if n > 1 else 1.0
     
-    # PASO 2: Filtrar programas usando Jaccard + palabras clave
+    # PASO 2: Filtrar programas
     coincidencias = []
     
     for prg in programas_list:
-        # Convertir a palabras
         prg_palabras = set(p.lower() for p in str(prg).split() if p.lower() not in palabras_comunes)
         
-        # Calcular similitud Jaccard
         if len(programa_palabras) > 0:
             interseccion = len(programa_palabras.intersection(prg_palabras))
             jaccard = interseccion / len(programa_palabras)
         else:
             jaccard = 1.0
         
-        # Validar: Jaccard >= umbral AND todas las palabras requeridas presentes
         tiene_requeridas = requerido.issubset(prg_palabras)
         
         if jaccard >= umbral_jaccard and tiene_requeridas:
@@ -91,29 +84,38 @@ def _buscar_programa_mejorado(lector, programa_buscar: str) -> dict:
     if len(coincidencias) > 15:
         print(f"   ... y {len(coincidencias) - 15} más")
     
-    # PASO 3: Enriquecer datos llamando al lector original
+    # PASO 3: Enriquecer datos CON LOS PROGRAMAS ENCONTRADOS
     print("\n📊 Enriqueciendo datos...")
-    datos = lector.buscar_programa(programa_buscar)
     
-    # Guardar datos enriquecidos
-    datos['equivalentes'] = coincidencias if coincidencias else [programa_buscar]
+    programas_df = lector.datos.get('programas', pd.DataFrame())
+    maestro_df = lector.datos.get('maestro', pd.DataFrame())
+    oferta_df = lector.datos.get('oferta', pd.DataFrame())
     
-    # Calcular estadísticas básicas
-    if 'maestro' in datos and isinstance(datos['maestro'], pd.DataFrame) and not datos['maestro'].empty:
-        maestro_df = datos['maestro']
-        datos['estadisticas'] = {
+    # FILTRAR por los coincidencias REALES encontradas
+    programas_filtrados = programas_df[programas_df['PROGRAMA_ACADEMICO'].isin(coincidencias)]
+    snies_codes = programas_filtrados['CODIGO_SNIES'].unique()
+    
+    maestro_filtrado = maestro_df[maestro_df['CODIGO_SNIES'].isin(snies_codes)]
+    maestro_merged = maestro_filtrado.merge(programas_filtrados, on='CODIGO_SNIES', how='left')
+    
+    if not oferta_df.empty:
+        maestro_merged = maestro_merged.merge(oferta_df, on=['CODIGO_SNIES', 'PERIODO'], how='left')
+    
+    datos = {
+        'nombre': programa_buscar,
+        'maestro': maestro_merged,
+        'maestro_enriquecido': maestro_merged,
+        'programas': programas_filtrados,
+        'equivalentes': coincidencias,
+        'snies_codes': list(snies_codes),
+        'palabras_clave': programa_palabras,
+        'estadisticas': {
             'total_programas_equivalentes': len(coincidencias),
-            'total_registros_snies': len(maestro_df),
-            'instituciones_unicas': maestro_df['CODIGO_INSTITUCION_x'].nunique() if 'CODIGO_INSTITUCION_x' in maestro_df.columns else 0,
-            'departamentos_unicos': maestro_df['DEPARTAMENTO_PROGRAMA'].nunique() if 'DEPARTAMENTO_PROGRAMA' in maestro_df.columns else 0,
+            'total_registros_snies': len(maestro_merged),
+            'instituciones_unicas': maestro_merged['CODIGO_INSTITUCION_x'].nunique() if 'CODIGO_INSTITUCION_x' in maestro_merged.columns else 0,
+            'departamentos_unicos': maestro_merged['DEPARTAMENTO_PROGRAMA'].nunique() if 'DEPARTAMENTO_PROGRAMA' in maestro_merged.columns else 0,
         }
-    else:
-        datos['estadisticas'] = {
-            'total_programas_equivalentes': len(coincidencias),
-            'total_registros_snies': 0,
-            'instituciones_unicas': 0,
-            'departamentos_unicos': 0,
-        }
+    }
     
     print(f"📊 Datos enriquecidos:")
     print(f"   - Programas equivalentes: {len(coincidencias)}")

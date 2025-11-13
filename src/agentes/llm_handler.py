@@ -1,6 +1,7 @@
 """
 Cliente de Azure OpenAI para análisis de programas académicos
 Ubicación: src/agentes/llm_handler.py
+REEMPLAZA completamente el archivo anterior
 """
 
 from typing import Dict, List
@@ -96,6 +97,99 @@ Responde SOLO con este JSON (sin texto adicional):
         except json.JSONDecodeError:
             print(f"Respuesta no es JSON válido")
             return {"denominacion_oficial": programa_objetivo}
+        except Exception as e:
+            print(f"Error en análisis: {e}")
+            return {"error": str(e)}
+    
+    def analizar_denominacion_con_contexto(self, programas: List[str], programa_objetivo: str,
+                                          contexto_mercado: Dict, instituciones: Dict,
+                                          modalidades: Dict, duracion: Dict = None,
+                                          matriculas: Dict = None) -> Dict:
+        """
+        Analiza denominación con contexto completo del mercado
+        
+        Args:
+            programas: Lista de denominaciones
+            programa_objetivo: Programa a analizar
+            contexto_mercado: Contexto del mercado (competencia, demanda, etc)
+            instituciones: Información de instituciones
+            modalidades: Modalidades disponibles
+            duracion: Información de duración
+            matriculas: Información de matrículas
+            
+        Returns:
+            Dict con análisis enriquecido
+        """
+        programas_str = "\n".join(f"- {p}" for p in programas[:15])
+        
+        contexto_str = f"""
+CONTEXTO DEL MERCADO:
+- Total de instituciones oferentes: {contexto_mercado.get('competencia', {}).get('total_instituciones', 'N/A')}
+- Universidades: {contexto_mercado.get('competencia', {}).get('universidades', 'N/A')}
+- Tecnológicas: {contexto_mercado.get('competencia', {}).get('tecnologicas', 'N/A')}
+- Sector privado: {contexto_mercado.get('sector', {}).get('porcentaje_privado', 'N/A')}%
+- Acreditadas alta calidad: {contexto_mercado.get('acreditacion', {}).get('porcentaje_acreditacion', 'N/A')}%
+- Nivel de demanda: {contexto_mercado.get('demanda', {}).get('nivel_demanda', 'N/A')}
+- Nuevos inscritos recientes: {contexto_mercado.get('demanda', {}).get('total_nuevos_reciente', 'N/A')}
+- Mercado homogéneo: {contexto_mercado.get('precios', {}).get('mercado_homogeneo', 'N/A')}
+
+MODALIDADES DISPONIBLES: {', '.join(modalidades.get('disponibles', []))}
+NÚMERO DE INSTITUCIONES: {instituciones.get('total', 'N/A')}
+"""
+        
+        if duracion:
+            contexto_str += f"\nDURACIÓN: {duracion.get('periodos_disponibles', [])} periodos"
+        
+        if matriculas and matriculas.get('promedio'):
+            contexto_str += f"\nRANGO DE MATRÍCULAS: ${matriculas.get('minima', 0):,.0f} - ${matriculas.get('maxima', 0):,.0f}"
+        
+        system_prompt = """Eres experto en educación superior colombiana y análisis de mercado académico.
+Debes proporcionar un análisis de denominación considerando el CONTEXTO COMPLETO del mercado.
+Responde SOLO con JSON válido."""
+        
+        user_prompt = f"""Analiza la denominación y posicionamiento en el mercado del programa:
+
+Programa objetivo: {programa_objetivo}
+
+Denominaciones encontradas:
+{programas_str}
+
+{contexto_str}
+
+PROPORCIONA ANÁLISIS que incluya:
+1. Denominación oficial estandarizada
+2. Variaciones encontradas
+3. Posicionamiento en el mercado
+4. Recomendaciones competitivas
+5. Oportunidades de diferenciación
+6. Recomendaciones para estudiantes que estudian la oferta
+
+Responde SOLO con este JSON (sin texto adicional):
+{{
+    "denominacion_oficial": "nombre estandarizado",
+    "variaciones_encontradas": ["var1", "var2"],
+    "patrones": {{"con_nivel": 5}},
+    "palabras_clave": ["palabra1"],
+    "clasificacion": "Doctorado",
+    "internacionales": ["PhD"],
+    "posicionamiento_mercado": {{
+        "competencia_nivel": "Alto/Medio/Bajo",
+        "saturacion": "Alta/Media/Baja",
+        "diferenciadores": ["diferenciador1"],
+        "tendencia": "creciente/estable/decreciente"
+    }},
+    "recomendaciones_competitivas": ["rec1", "rec2"],
+    "oportunidades_diferenciacion": ["oport1"],
+    "valor_para_estudiante": "Por qué este programa es valioso",
+    "hallazgos": ["hallazgo1"]
+}}"""
+        
+        try:
+            response = self.call(system_prompt, user_prompt, max_tokens=1500)
+            return json.loads(response)
+        except json.JSONDecodeError:
+            print(f"Respuesta no es JSON válido")
+            return {"denominacion_oficial": programa_objetivo, "error": "JSON parsing failed"}
         except Exception as e:
             print(f"Error en análisis: {e}")
             return {"error": str(e)}
