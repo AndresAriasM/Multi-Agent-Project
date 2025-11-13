@@ -603,10 +603,10 @@ class GeneradorPowerPoint:
     def _agregar_modalidades_duracion(self) -> None:
         """Información completa de modalidades y duración"""
         slide = self._crear_slide_titulo("Modalidades y Estructura Académica")
-        
+
         modalidades = self.datos_enriquecidos.get('modalidades', {})
         duracion = self.datos_enriquecidos.get('duracion', {})
-        
+
         # MODALIDADES
         mod_box = slide.shapes.add_textbox(Inches(0.8), Inches(1.5), Inches(4.2), Inches(0.4))
         mod_frame = mod_box.text_frame
@@ -615,7 +615,7 @@ class GeneradorPowerPoint:
         p.font.size = Pt(11)
         p.font.bold = True
         p.font.color.rgb = self.color_primario
-        
+
         top = Inches(2.0)
         for i, (mod, count) in enumerate(sorted(modalidades.get('distribucion', {}).items(), key=lambda x: x[1], reverse=True)):
             box = slide.shapes.add_textbox(Inches(1), top + Inches(i * 0.4), Inches(4), Inches(0.35))
@@ -627,7 +627,7 @@ class GeneradorPowerPoint:
             p.text = f"• {mod}: {count} ({porcentaje:.1f}%)"
             p.font.size = Pt(9)
             p.font.color.rgb = self.color_texto
-        
+
         # DURACIÓN
         dur_box = slide.shapes.add_textbox(Inches(5.2), Inches(1.5), Inches(4.2), Inches(0.4))
         dur_frame = dur_box.text_frame
@@ -636,28 +636,32 @@ class GeneradorPowerPoint:
         p.font.size = Pt(11)
         p.font.bold = True
         p.font.color.rgb = self.color_primario
-        
+
         dur_info_box = slide.shapes.add_textbox(Inches(5.2), Inches(2.0), Inches(4.2), Inches(4))
         dur_info_frame = dur_info_box.text_frame
         dur_info_frame.word_wrap = True
-        
+
         periodos_str = ', '.join(str(p) for p in duracion.get('periodos_disponibles', [])[:15])
         p = dur_info_frame.paragraphs[0]
         p.text = f"Periodos:\n{periodos_str if periodos_str else 'N/A'}"
         p.font.size = Pt(9)
-        
+
         creditos = duracion.get('creditos_disponibles', [])
         if creditos:
             p = dur_info_frame.add_paragraph()
             creditos_str = ', '.join(str(c) for c in creditos[:10])
             p.text = f"\nCréditos:\n{creditos_str}"
             p.font.size = Pt(9)
-        
+
+        # ✅ CORRECCIÓN: Filtrar None de la lista antes de hacer join
         periodic = duracion.get('periodicidad', [])
         if periodic:
-            p = dur_info_frame.add_paragraph()
-            p.text = f"\nPeriodicidad:\n{', '.join(periodic)}"
-            p.font.size = Pt(9)
+            # ✅ Filtrar valores None
+            periodic_limpio = [str(p) for p in periodic if p is not None]
+            if periodic_limpio:
+                p = dur_info_frame.add_paragraph()
+                p.text = f"\nPeriodicidad:\n{', '.join(periodic_limpio)}"
+                p.font.size = Pt(9)
     
     def _agregar_informacion_matriculas(self) -> None:
         """Información detallada de matrículas"""

@@ -1,129 +1,1120 @@
 {
   "denominacion": {
     "denominaciones_totales": [
-      "Ingenieria Produccion Agricola",
-      "Ingenieria Agricola",
-      "Maestria Ingenieria Ingenieria Agricola"
+      "Ingenieria Datos Inteligencia Artificial",
+      "Ingenieria Datos Software",
+      "Ingenieria Ciencia Datos",
+      "Ingenieria Inteligencia Artificial Ciencia Datos",
+      "Ingenieria Analitica Datos",
+      "Ingenieria Ciencias Datos Inteligencia Artificial",
+      "Ingenieria Software Datos",
+      "Ingenieria Datos Inteligencia Artifcial",
+      "Ingenieria Ciencia Datos Inteligencia Negocios",
+      "Maestria Ingenieria Analitica Datos"
     ],
-    "cantidad_variaciones": "3",
+    "cantidad_variaciones": "10",
     "analisis_ia": {
-      "denominacion_oficial": "Ingeniería Agrícola",
+      "denominacion_oficial": "Ingeniería de Datos",
       "variaciones_encontradas": [
-        "Ingeniería Producción Agrícola",
-        "Ingeniería Agrícola",
-        "Maestría en Ingeniería Agrícola"
+        "Ingenieria Datos Inteligencia Artificial",
+        "Ingenieria Datos Software",
+        "Ingenieria Ciencia Datos",
+        "Ingenieria Inteligencia Artificial Ciencia Datos",
+        "Ingenieria Analitica Datos",
+        "Ingenieria Ciencias Datos Inteligencia Artificial",
+        "Ingenieria Software Datos",
+        "Ingenieria Datos Inteligencia Artifcial",
+        "Ingenieria Ciencia Datos Inteligencia Negocios",
+        "Maestria Ingenieria Analitica Datos"
       ],
       "patrones": {
         "con_nivel": "5"
       },
       "palabras_clave": [
-        "Agricultura",
         "Ingeniería",
-        "Producción",
-        "Sostenibilidad",
-        "Innovación"
+        "Datos",
+        "Inteligencia Artificial",
+        "Ciencia",
+        "Analítica",
+        "Software",
+        "Negocios"
       ],
-      "clasificacion": "Pregrado",
+      "clasificacion": "Maestría",
       "internacionales": [
-        "Agricultural Engineering"
+        "Master en Ciencia de Datos",
+        "Data Science Master"
       ],
       "posicionamiento_mercado": {
-        "competencia_nivel": "Medio",
-        "saturacion": "Media",
+        "competencia_nivel": "Alto",
+        "saturacion": "Alta",
         "diferenciadores": [
-          "Enfoque en sostenibilidad y tecnología agrícola avanzada"
+          "Enfoque en integración de inteligencia artificial y ciencia de datos",
+          "Modalidades flexibles (Presencial, Virtual, Presencial-Virtual)",
+          "Amplio rango de duración y costos"
         ],
-        "tendencia": "estable"
+        "tendencia": "creciente"
       },
       "recomendaciones_competitivas": [
-        "Definir claramente la denominación para evitar confusiones",
-        "Fortalecer la comunicación de diferenciadores tecnológicos y sostenibles"
+        "Definir una propuesta de valor diferenciadora basada en especializaciones o certificaciones complementarias",
+        "Fortalecer alianzas con empresas tecnológicas para prácticas y proyectos reales"
       ],
       "oportunidades_diferenciacion": [
-        "Integrar especializaciones en agricultura de precisión y biotecnología agrícola"
+        "Desarrollar especializaciones en áreas emergentes como Machine Learning y Big Data"
       ],
-      "valor_para_estudiante": "Este programa prepara profesionales capaces de innovar en la producción agrícola sostenible, con habilidades en tecnología y gestión, respondiendo a las demandas del sector agroindustrial.",
+      "valor_para_estudiante": "Este programa prepara a los estudiantes para liderar proyectos de análisis de datos y desarrollo de soluciones inteligentes, en un mercado en crecimiento y con alta demanda laboral, ofreciendo flexibilidad y reconocimiento académico.",
       "hallazgos": [
-        "La variación en denominaciones puede generar confusión en el mercado, por lo que una denominación estandarizada facilitará el posicionamiento y reconocimiento."
+        "Alta competencia y saturación en el mercado, con poca diferenciación clara entre programas",
+        "Oportunidad de posicionarse con un enfoque en innovación y alianzas estratégicas"
       ]
     },
     "estadisticas": {
-      "total_variaciones": "3",
-      "palabras_unicas": "4",
-      "longitud_promedio": "3.0",
+      "total_variaciones": "10",
+      "palabras_unicas": "11",
+      "longitud_promedio": "3.9",
       "palabras_mas_frecuentes": {
-        "ingenieria": "4",
-        "agricola": "3",
-        "produccion": "1",
-        "maestria": "1"
+        "ingenieria": "10",
+        "datos": "10",
+        "inteligencia": "5",
+        "ciencia": "3",
+        "artificial": "3"
       }
     },
     "contexto_mercado_resumido": {
-      "competencia": {},
-      "acreditacion": {},
-      "demanda": {},
-      "sector": {}
+      "competencia": {
+        "total_instituciones": "92",
+        "universidades": "52",
+        "tecnologicas": "0",
+        "instituciones_tecnicas": "0"
+      },
+      "acreditacion": {
+        "total_acreditadas": "0",
+        "porcentaje_acreditacion": "0.0"
+      },
+      "demanda": {
+        "total_matriculados_reciente": "5583",
+        "total_nuevos_reciente": "941",
+        "nivel_demanda": "Alto"
+      },
+      "sector": {
+        "oficial": "16",
+        "privado": "76",
+        "porcentaje_privado": "82.61"
+      }
     }
   },
   "tendencias": {
     "palabras_emergentes": [
-      "transformación digital",
-      "sostenibilidad"
+      "Inteligencia Artificial aplicada a la ingeniería de datos",
+      "Automatización y aprendizaje automático",
+      "Big Data y análisis en tiempo real"
     ],
-    "palabras_decadentes": [],
+    "palabras_decadentes": [
+      "Cursos tradicionales sin enfoque práctico",
+      "Formación en tecnologías obsoletas"
+    ],
     "tendencias_nacionales": {
-      "tendencia": "Crecimiento STEM"
+      "tendencia": "Incremento en programas especializados en análisis de datos y ciencia de datos"
     },
     "tendencias_globales": {
-      "tendencia": "Competencias digitales"
+      "tendencia": "Integración de ingeniería de datos con inteligencia artificial y machine learning"
     },
     "analisis_ia": {
       "emergentes": [
-        "transformación digital",
-        "sostenibilidad"
+        "Inteligencia Artificial aplicada a la ingeniería de datos",
+        "Automatización y aprendizaje automático",
+        "Big Data y análisis en tiempo real"
       ],
-      "decadentes": [],
+      "decadentes": [
+        "Cursos tradicionales sin enfoque práctico",
+        "Formación en tecnologías obsoletas"
+      ],
       "nacionales": {
-        "tendencia": "Crecimiento STEM"
+        "tendencia": "Incremento en programas especializados en análisis de datos y ciencia de datos"
       },
       "globales": {
-        "tendencia": "Competencias digitales"
+        "tendencia": "Integración de ingeniería de datos con inteligencia artificial y machine learning"
       },
       "innovacion": [
-        "metodologías híbridas"
+        "Implementación de laboratorios virtuales",
+        "Uso de plataformas en la nube para prácticas"
       ],
       "recomendaciones": [
-        "Actualizar"
+        "Actualizar currículos con tecnologías emergentes",
+        "Fomentar alianzas con la industria para prácticas profesionales",
+        "Incorporar metodologías de aprendizaje activo y proyectos reales"
       ]
     },
     "estadisticas": {
-      "total_periodos": "50",
-      "instituciones": "8",
-      "programas": "15",
-      "departamentos": "9"
+      "total_periodos": "15",
+      "instituciones": "14",
+      "programas": "16",
+      "departamentos": "6"
     }
   },
+  "instituciones_geografia": {
+    "segmentacion_institucional": {
+      "por_tipo": {
+        "distribucion": {
+          "Universidad": "52",
+          "Institucion Universitaria/Escuela Tecnologica": "36",
+          "Institucion Tecnologica": "4"
+        },
+        "total_tipos": "3",
+        "detalles_por_tipo": {
+          "Universidad": [
+            {
+              "nombre": "Universidad Pontificia Bolivariana",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Universidad San Buenaventura",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Universidad Manizales",
+              "municipio": "Manizales"
+            },
+            {
+              "nombre": "Universidad Santo Tomas",
+              "municipio": "Tunja"
+            },
+            {
+              "nombre": "Universidad Autonoma Caribe- Uniautonoma",
+              "municipio": "Barranquilla"
+            },
+            {
+              "nombre": "Universidad Libre",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Universidad Autonoma Latinoamericana-Unaula-",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Universidad Autonoma Occidente",
+              "municipio": "Cali"
+            },
+            {
+              "nombre": "Universidad Ibague",
+              "municipio": "Ibague"
+            },
+            {
+              "nombre": "Universidad Industrial Santander",
+              "municipio": "Bucaramanga"
+            },
+            {
+              "nombre": "Fundacion Universidad Bogota Jorge Tadeo Lozano",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Universidad Simon Bolivar",
+              "municipio": "Barranquilla"
+            },
+            {
+              "nombre": "Universidad Ean",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Fundacion Universidad Bogota Jorge Tadeo Lozano",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Universidad Pontificia Bolivariana",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Universidad San Buenaventura",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Universidad Manizales",
+              "municipio": "Manizales"
+            },
+            {
+              "nombre": "Universidad Santo Tomas",
+              "municipio": "Tunja"
+            },
+            {
+              "nombre": "Universidad Autonoma Caribe- Uniautonoma",
+              "municipio": "Barranquilla"
+            },
+            {
+              "nombre": "Universidad Libre",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Universidad Autonoma Latinoamericana-Unaula-",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Universidad Autonoma Occidente",
+              "municipio": "Cali"
+            },
+            {
+              "nombre": "Universidad Ibague",
+              "municipio": "Ibague"
+            },
+            {
+              "nombre": "Universidad Industrial Santander",
+              "municipio": "Bucaramanga"
+            },
+            {
+              "nombre": "Universidad Simon Bolivar",
+              "municipio": "Barranquilla"
+            },
+            {
+              "nombre": "Universidad Ean",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Fundacion Universidad Bogota Jorge Tadeo Lozano",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Universidad Pontificia Bolivariana",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Universidad San Buenaventura",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Universidad Manizales",
+              "municipio": "Manizales"
+            },
+            {
+              "nombre": "Universidad Santo Tomas",
+              "municipio": "Tunja"
+            },
+            {
+              "nombre": "Universidad Autonoma Caribe- Uniautonoma",
+              "municipio": "Barranquilla"
+            },
+            {
+              "nombre": "Universidad Libre",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Universidad Autonoma Latinoamericana-Unaula-",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Universidad Autonoma Occidente",
+              "municipio": "Cali"
+            },
+            {
+              "nombre": "Universidad Ibague",
+              "municipio": "Ibague"
+            },
+            {
+              "nombre": "Universidad Industrial Santander",
+              "municipio": "Bucaramanga"
+            },
+            {
+              "nombre": "Universidad Simon Bolivar",
+              "municipio": "Barranquilla"
+            },
+            {
+              "nombre": "Universidad Ean",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Universidad Industrial Santander",
+              "municipio": "Bucaramanga"
+            },
+            {
+              "nombre": "Fundacion Universidad Bogota Jorge Tadeo Lozano",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Universidad Pontificia Bolivariana",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Universidad San Buenaventura",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Universidad Manizales",
+              "municipio": "Manizales"
+            },
+            {
+              "nombre": "Universidad Santo Tomas",
+              "municipio": "Tunja"
+            },
+            {
+              "nombre": "Universidad Autonoma Caribe- Uniautonoma",
+              "municipio": "Barranquilla"
+            },
+            {
+              "nombre": "Universidad Libre",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Universidad Autonoma Latinoamericana-Unaula-",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Universidad Simon Bolivar",
+              "municipio": "Barranquilla"
+            },
+            {
+              "nombre": "Universidad Ean",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Universidad Autonoma Occidente",
+              "municipio": "Cali"
+            },
+            {
+              "nombre": "Universidad Ibague",
+              "municipio": "Ibague"
+            }
+          ],
+          "Institucion Universitaria/Escuela Tecnologica": [
+            {
+              "nombre": "Politecnico Colombiano Jaime Isaza Cadavid",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Corporacion Universitaria Minuto Dios -Uniminuto-",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Corporacion Universitaria Iberoamericana",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Fundacion Universitaria San Mateo San Mateo Educacion Superior",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Instituto Tecnologico Metropolitano",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Politecnico Grancolombiano",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Fundacion Universitaria Catolica Norte",
+              "municipio": "Santa Rosa Osos"
+            },
+            {
+              "nombre": "Fundacion Universitaria Cervantes San Agustin Unicervantes",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Institucion Universitaria Digital Antioquia -Iu. Digital",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Corporacion Universitaria Minuto Dios -Uniminuto-",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Corporacion Universitaria Iberoamericana",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Instituto Tecnologico Metropolitano",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Fundacion Universitaria San Mateo San Mateo Educacion Superior",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Politecnico Colombiano Jaime Isaza Cadavid",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Politecnico Grancolombiano",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Fundacion Universitaria Catolica Norte",
+              "municipio": "Santa Rosa Osos"
+            },
+            {
+              "nombre": "Fundacion Universitaria Cervantes San Agustin Unicervantes",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Institucion Universitaria Digital Antioquia -Iu. Digital",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Corporacion Universitaria Minuto Dios -Uniminuto-",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Corporacion Universitaria Iberoamericana",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Fundacion Universitaria San Mateo San Mateo Educacion Superior",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Instituto Tecnologico Metropolitano",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Politecnico Colombiano Jaime Isaza Cadavid",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Politecnico Grancolombiano",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Fundacion Universitaria Catolica Norte",
+              "municipio": "Santa Rosa Osos"
+            },
+            {
+              "nombre": "Fundacion Universitaria Cervantes San Agustin Unicervantes",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Institucion Universitaria Digital Antioquia -Iu. Digital",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Politecnico Grancolombiano",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Fundacion Universitaria Catolica Norte",
+              "municipio": "Santa Rosa Osos"
+            },
+            {
+              "nombre": "Corporacion Universitaria Minuto Dios -Uniminuto-",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Corporacion Universitaria Iberoamericana",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Instituto Tecnologico Metropolitano",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Politecnico Colombiano Jaime Isaza Cadavid",
+              "municipio": "Medellin"
+            },
+            {
+              "nombre": "Fundacion Universitaria San Mateo San Mateo Educacion Superior",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Fundacion Universitaria Cervantes San Agustin Unicervantes",
+              "municipio": "Bogota, D.C."
+            },
+            {
+              "nombre": "Institucion Universitaria Digital Antioquia -Iu. Digital",
+              "municipio": "Medellin"
+            }
+          ],
+          "Institucion Tecnologica": [
+            {
+              "nombre": "Corporacion Politecnico Costa Atlantica",
+              "municipio": "Barranquilla"
+            },
+            {
+              "nombre": "Corporacion Politecnico Costa Atlantica",
+              "municipio": "Barranquilla"
+            },
+            {
+              "nombre": "Corporacion Politecnico Costa Atlantica",
+              "municipio": "Barranquilla"
+            },
+            {
+              "nombre": "Corporacion Politecnico Costa Atlantica",
+              "municipio": "Barranquilla"
+            }
+          ]
+        },
+        "tipo_dominante": "Universidad"
+      },
+      "por_sector": {
+        "distribucion": {
+          "Privado": "76",
+          "Oficial": "16"
+        },
+        "porcentajes": {
+          "Privado": "82.61",
+          "Oficial": "17.39"
+        },
+        "sector_dominante": "Privado",
+        "detalle_por_sector": {
+          "Privado": [
+            "Universidad Pontificia Bolivariana",
+            "Universidad San Buenaventura",
+            "Universidad Manizales",
+            "Universidad Santo Tomas",
+            "Universidad Autonoma Caribe- Uniautonoma",
+            "Universidad Libre",
+            "Universidad Autonoma Latinoamericana-Unaula-",
+            "Universidad Autonoma Occidente",
+            "Universidad Ibague",
+            "Fundacion Universidad Bogota Jorge Tadeo Lozano",
+            "Corporacion Universitaria Minuto Dios -Uniminuto-",
+            "Corporacion Universitaria Iberoamericana",
+            "Fundacion Universitaria San Mateo San Mateo Educacion Superior",
+            "Corporacion Politecnico Costa Atlantica",
+            "Politecnico Grancolombiano",
+            "Fundacion Universitaria Catolica Norte",
+            "Universidad Simon Bolivar",
+            "Universidad Ean",
+            "Fundacion Universidad Bogota Jorge Tadeo Lozano",
+            "Universidad Pontificia Bolivariana",
+            "Universidad San Buenaventura",
+            "Universidad Manizales",
+            "Universidad Santo Tomas",
+            "Universidad Autonoma Caribe- Uniautonoma",
+            "Universidad Libre",
+            "Universidad Autonoma Latinoamericana-Unaula-",
+            "Universidad Autonoma Occidente",
+            "Universidad Ibague",
+            "Fundacion Universitaria Cervantes San Agustin Unicervantes",
+            "Corporacion Universitaria Minuto Dios -Uniminuto-",
+            "Corporacion Universitaria Iberoamericana",
+            "Fundacion Universitaria San Mateo San Mateo Educacion Superior",
+            "Corporacion Politecnico Costa Atlantica",
+            "Politecnico Grancolombiano",
+            "Fundacion Universitaria Catolica Norte",
+            "Universidad Simon Bolivar",
+            "Universidad Ean",
+            "Fundacion Universidad Bogota Jorge Tadeo Lozano",
+            "Universidad Pontificia Bolivariana",
+            "Universidad San Buenaventura",
+            "Universidad Manizales",
+            "Universidad Santo Tomas",
+            "Universidad Autonoma Caribe- Uniautonoma",
+            "Universidad Libre",
+            "Universidad Autonoma Latinoamericana-Unaula-",
+            "Universidad Autonoma Occidente",
+            "Universidad Ibague",
+            "Fundacion Universitaria Cervantes San Agustin Unicervantes",
+            "Universidad Simon Bolivar",
+            "Universidad Ean",
+            "Corporacion Universitaria Minuto Dios -Uniminuto-",
+            "Corporacion Universitaria Iberoamericana",
+            "Fundacion Universitaria San Mateo San Mateo Educacion Superior",
+            "Corporacion Politecnico Costa Atlantica",
+            "Politecnico Grancolombiano",
+            "Fundacion Universitaria Catolica Norte",
+            "Fundacion Universidad Bogota Jorge Tadeo Lozano",
+            "Universidad Pontificia Bolivariana",
+            "Universidad San Buenaventura",
+            "Universidad Manizales",
+            "Universidad Santo Tomas",
+            "Universidad Autonoma Caribe- Uniautonoma",
+            "Universidad Libre",
+            "Universidad Autonoma Latinoamericana-Unaula-",
+            "Fundacion Universitaria Cervantes San Agustin Unicervantes",
+            "Politecnico Grancolombiano",
+            "Fundacion Universitaria Catolica Norte",
+            "Universidad Simon Bolivar",
+            "Universidad Ean",
+            "Corporacion Universitaria Minuto Dios -Uniminuto-",
+            "Corporacion Universitaria Iberoamericana",
+            "Corporacion Politecnico Costa Atlantica",
+            "Universidad Autonoma Occidente",
+            "Universidad Ibague",
+            "Fundacion Universitaria San Mateo San Mateo Educacion Superior",
+            "Fundacion Universitaria Cervantes San Agustin Unicervantes"
+          ],
+          "Oficial": [
+            "Politecnico Colombiano Jaime Isaza Cadavid",
+            "Universidad Industrial Santander",
+            "Instituto Tecnologico Metropolitano",
+            "Institucion Universitaria Digital Antioquia -Iu. Digital",
+            "Universidad Industrial Santander",
+            "Instituto Tecnologico Metropolitano",
+            "Politecnico Colombiano Jaime Isaza Cadavid",
+            "Institucion Universitaria Digital Antioquia -Iu. Digital",
+            "Universidad Industrial Santander",
+            "Instituto Tecnologico Metropolitano",
+            "Politecnico Colombiano Jaime Isaza Cadavid",
+            "Universidad Industrial Santander",
+            "Institucion Universitaria Digital Antioquia -Iu. Digital",
+            "Instituto Tecnologico Metropolitano",
+            "Politecnico Colombiano Jaime Isaza Cadavid",
+            "Institucion Universitaria Digital Antioquia -Iu. Digital"
+          ]
+        }
+      },
+      "acreditadas_vs_no_acreditadas": {
+        "acreditadas": {
+          "cantidad": "0",
+          "porcentaje": "0.0",
+          "lista": []
+        },
+        "no_acreditadas": {
+          "cantidad": "92",
+          "porcentaje": "100.0",
+          "lista": [
+            "Universidad Pontificia Bolivariana",
+            "Universidad San Buenaventura",
+            "Universidad Manizales",
+            "Universidad Santo Tomas",
+            "Universidad Autonoma Caribe- Uniautonoma",
+            "Universidad Libre",
+            "Universidad Autonoma Latinoamericana-Unaula-",
+            "Universidad Autonoma Occidente",
+            "Universidad Ibague",
+            "Politecnico Colombiano Jaime Isaza Cadavid"
+          ]
+        }
+      },
+      "por_departamento": {
+        "total_departamentos": "8",
+        "distribucion": {
+          "Antioquia": "28",
+          "Caldas": "4",
+          "Boyaca": "4",
+          "Atlantico": "12",
+          "Bogota D.C.": "32",
+          "Valle Cauca": "4",
+          "Tolima": "4",
+          "Santander": "4"
+        },
+        "departamento_con_mas_oferta": "Bogota D.C.",
+        "detalles": {
+          "Antioquia": {
+            "cantidad": "28",
+            "instituciones": [
+              "Universidad Pontificia Bolivariana",
+              "Universidad San Buenaventura",
+              "Universidad Autonoma Latinoamericana-Unaula-",
+              "Politecnico Colombiano Jaime Isaza Cadavid",
+              "Instituto Tecnologico Metropolitano",
+              "Fundacion Universitaria Catolica Norte",
+              "Universidad Pontificia Bolivariana",
+              "Universidad San Buenaventura",
+              "Universidad Autonoma Latinoamericana-Unaula-",
+              "Institucion Universitaria Digital Antioquia -Iu. Digital",
+              "Instituto Tecnologico Metropolitano",
+              "Politecnico Colombiano Jaime Isaza Cadavid",
+              "Fundacion Universitaria Catolica Norte",
+              "Universidad Pontificia Bolivariana",
+              "Universidad San Buenaventura",
+              "Universidad Autonoma Latinoamericana-Unaula-",
+              "Institucion Universitaria Digital Antioquia -Iu. Digital",
+              "Instituto Tecnologico Metropolitano",
+              "Politecnico Colombiano Jaime Isaza Cadavid",
+              "Fundacion Universitaria Catolica Norte",
+              "Universidad Pontificia Bolivariana",
+              "Universidad San Buenaventura",
+              "Universidad Autonoma Latinoamericana-Unaula-",
+              "Institucion Universitaria Digital Antioquia -Iu. Digital",
+              "Fundacion Universitaria Catolica Norte",
+              "Instituto Tecnologico Metropolitano",
+              "Politecnico Colombiano Jaime Isaza Cadavid",
+              "Institucion Universitaria Digital Antioquia -Iu. Digital"
+            ]
+          },
+          "Caldas": {
+            "cantidad": "4",
+            "instituciones": [
+              "Universidad Manizales",
+              "Universidad Manizales",
+              "Universidad Manizales",
+              "Universidad Manizales"
+            ]
+          },
+          "Boyaca": {
+            "cantidad": "4",
+            "instituciones": [
+              "Universidad Santo Tomas",
+              "Universidad Santo Tomas",
+              "Universidad Santo Tomas",
+              "Universidad Santo Tomas"
+            ]
+          },
+          "Atlantico": {
+            "cantidad": "12",
+            "instituciones": [
+              "Universidad Autonoma Caribe- Uniautonoma",
+              "Corporacion Politecnico Costa Atlantica",
+              "Universidad Simon Bolivar",
+              "Universidad Autonoma Caribe- Uniautonoma",
+              "Corporacion Politecnico Costa Atlantica",
+              "Universidad Simon Bolivar",
+              "Universidad Autonoma Caribe- Uniautonoma",
+              "Universidad Simon Bolivar",
+              "Corporacion Politecnico Costa Atlantica",
+              "Universidad Autonoma Caribe- Uniautonoma",
+              "Universidad Simon Bolivar",
+              "Corporacion Politecnico Costa Atlantica"
+            ]
+          },
+          "Bogota D.C.": {
+            "cantidad": "32",
+            "instituciones": [
+              "Universidad Libre",
+              "Fundacion Universidad Bogota Jorge Tadeo Lozano",
+              "Corporacion Universitaria Minuto Dios -Uniminuto-",
+              "Corporacion Universitaria Iberoamericana",
+              "Fundacion Universitaria San Mateo San Mateo Educacion Superior",
+              "Politecnico Grancolombiano",
+              "Universidad Ean",
+              "Fundacion Universidad Bogota Jorge Tadeo Lozano",
+              "Universidad Libre",
+              "Fundacion Universitaria Cervantes San Agustin Unicervantes",
+              "Corporacion Universitaria Minuto Dios -Uniminuto-",
+              "Corporacion Universitaria Iberoamericana",
+              "Fundacion Universitaria San Mateo San Mateo Educacion Superior",
+              "Politecnico Grancolombiano",
+              "Universidad Ean",
+              "Fundacion Universidad Bogota Jorge Tadeo Lozano",
+              "Universidad Libre",
+              "Fundacion Universitaria Cervantes San Agustin Unicervantes",
+              "Universidad Ean",
+              "Corporacion Universitaria Minuto Dios -Uniminuto-",
+              "Corporacion Universitaria Iberoamericana",
+              "Fundacion Universitaria San Mateo San Mateo Educacion Superior",
+              "Politecnico Grancolombiano",
+              "Fundacion Universidad Bogota Jorge Tadeo Lozano",
+              "Universidad Libre",
+              "Fundacion Universitaria Cervantes San Agustin Unicervantes",
+              "Politecnico Grancolombiano",
+              "Universidad Ean",
+              "Corporacion Universitaria Minuto Dios -Uniminuto-",
+              "Corporacion Universitaria Iberoamericana",
+              "Fundacion Universitaria San Mateo San Mateo Educacion Superior",
+              "Fundacion Universitaria Cervantes San Agustin Unicervantes"
+            ]
+          },
+          "Valle Cauca": {
+            "cantidad": "4",
+            "instituciones": [
+              "Universidad Autonoma Occidente",
+              "Universidad Autonoma Occidente",
+              "Universidad Autonoma Occidente",
+              "Universidad Autonoma Occidente"
+            ]
+          },
+          "Tolima": {
+            "cantidad": "4",
+            "instituciones": [
+              "Universidad Ibague",
+              "Universidad Ibague",
+              "Universidad Ibague",
+              "Universidad Ibague"
+            ]
+          },
+          "Santander": {
+            "cantidad": "4",
+            "instituciones": [
+              "Universidad Industrial Santander",
+              "Universidad Industrial Santander",
+              "Universidad Industrial Santander",
+              "Universidad Industrial Santander"
+            ]
+          }
+        }
+      },
+      "distribucion_geografica": {
+        "total_municipios": "9",
+        "top_10_municipios": {
+          "Bogota, D.C.": "32",
+          "Medellin": "24",
+          "Barranquilla": "12",
+          "Manizales": "4",
+          "Tunja": "4",
+          "Cali": "4",
+          "Ibague": "4",
+          "Bucaramanga": "4",
+          "Santa Rosa Osos": "4"
+        },
+        "concentracion_geogratica": "100.0"
+      }
+    },
+    "hub_geograficos": {
+      "hubs_principales": [
+        {
+          "departamento": "Bogota, D.C.",
+          "cantidad_programas": "8",
+          "porcentaje": "30.77",
+          "nivel": "Alto"
+        },
+        {
+          "departamento": "Antioquia",
+          "cantidad_programas": "7",
+          "porcentaje": "26.92",
+          "nivel": "Alto"
+        }
+      ],
+      "hubs_secundarios": [
+        {
+          "departamento": "Valle Cauca",
+          "cantidad_programas": "3",
+          "porcentaje": "11.54",
+          "nivel": "Medio"
+        },
+        {
+          "departamento": "Atlantico",
+          "cantidad_programas": "3",
+          "porcentaje": "11.54",
+          "nivel": "Medio"
+        }
+      ],
+      "concentracion_top_3_departamentos": "69.23",
+      "total_departamentos": "8",
+      "dispersion_geografica": "Baja"
+    },
+    "oportunidades_por_ubicacion": {
+      "departamentos_con_alta_demanda": [
+        {
+          "departamento": "Bogota, D.C.",
+          "programas": "8",
+          "potencial": "Alto - demanda comprobada"
+        },
+        {
+          "departamento": "Antioquia",
+          "programas": "7",
+          "potencial": "Alto - demanda comprobada"
+        }
+      ],
+      "departamentos_con_baja_cobertura": [
+        {
+          "departamento": "Santander",
+          "programas": "1",
+          "potencial": "Oportunidad de expansión"
+        },
+        {
+          "departamento": "Boyaca",
+          "programas": "1",
+          "potencial": "Oportunidad de expansión"
+        },
+        {
+          "departamento": "Tolima",
+          "programas": "1",
+          "potencial": "Oportunidad de expansión"
+        }
+      ]
+    },
+    "competencia_regional": {
+      "detalles_por_departamento": {
+        "Antioquia": {
+          "total": "28",
+          "universidades": "12",
+          "tecnologicas": "0",
+          "acreditadas": "0"
+        },
+        "Caldas": {
+          "total": "4",
+          "universidades": "4",
+          "tecnologicas": "0",
+          "acreditadas": "0"
+        },
+        "Boyaca": {
+          "total": "4",
+          "universidades": "4",
+          "tecnologicas": "0",
+          "acreditadas": "0"
+        },
+        "Atlantico": {
+          "total": "12",
+          "universidades": "8",
+          "tecnologicas": "0",
+          "acreditadas": "0"
+        },
+        "Bogota D.C.": {
+          "total": "32",
+          "universidades": "12",
+          "tecnologicas": "0",
+          "acreditadas": "0"
+        },
+        "Valle Cauca": {
+          "total": "4",
+          "universidades": "4",
+          "tecnologicas": "0",
+          "acreditadas": "0"
+        },
+        "Tolima": {
+          "total": "4",
+          "universidades": "4",
+          "tecnologicas": "0",
+          "acreditadas": "0"
+        },
+        "Santander": {
+          "total": "4",
+          "universidades": "4",
+          "tecnologicas": "0",
+          "acreditadas": "0"
+        }
+      },
+      "regiones_mas_competitivas": [
+        "('Bogota D.C.', {'total': 32, 'universidades': 12, 'tecnologicas': 0, 'acreditadas': 0})",
+        "('Antioquia', {'total': 28, 'universidades': 12, 'tecnologicas': 0, 'acreditadas': 0})",
+        "('Atlantico', {'total': 12, 'universidades': 8, 'tecnologicas': 0, 'acreditadas': 0})",
+        "('Caldas', {'total': 4, 'universidades': 4, 'tecnologicas': 0, 'acreditadas': 0})",
+        "('Boyaca', {'total': 4, 'universidades': 4, 'tecnologicas': 0, 'acreditadas': 0})"
+      ]
+    },
+    "institucion_referente": {
+      "institucion_referente_top1": {
+        "nombre": "Universidad Pontificia Bolivariana",
+        "tipo": "Universidad",
+        "sector": "Privado",
+        "acreditada": "False",
+        "municipio": "Medellin",
+        "departamento": "Antioquia",
+        "score": "2"
+      },
+      "institucion_referente_top3": [
+        {
+          "nombre": "Universidad Pontificia Bolivariana",
+          "tipo": "Universidad",
+          "sector": "Privado",
+          "acreditada": "False",
+          "municipio": "Medellin",
+          "departamento": "Antioquia",
+          "score": "2"
+        },
+        {
+          "nombre": "Universidad San Buenaventura",
+          "tipo": "Universidad",
+          "sector": "Privado",
+          "acreditada": "False",
+          "municipio": "Medellin",
+          "departamento": "Antioquia",
+          "score": "2"
+        },
+        {
+          "nombre": "Universidad Manizales",
+          "tipo": "Universidad",
+          "sector": "Privado",
+          "acreditada": "False",
+          "municipio": "Manizales",
+          "departamento": "Caldas",
+          "score": "2"
+        }
+      ]
+    },
+    "gaps_geograficos": {
+      "departamentos_sin_cobertura": [
+        "Bogotá D.C.",
+        "Valle del Cauca",
+        "Cundinamarca",
+        "Atlántico",
+        "Meta",
+        "Nariño",
+        "Cauca",
+        "Córdoba",
+        "Bolívar",
+        "Magdalena",
+        "Cesar",
+        "Sucre",
+        "Huila",
+        "Putumayo",
+        "Caquetá",
+        "Guaviare",
+        "Chocó",
+        "Guainía",
+        "Vichada",
+        "Amazonas",
+        "Arauca",
+        "Casanare",
+        "Quindío",
+        "Risaralda",
+        "La Guajira",
+        "Boyacá"
+      ],
+      "cantidad_gaps": "26",
+      "oportunidad_expansion": "26 departamentos sin oferta"
+    },
+    "analisis_ia": {
+      "analisis": "La distribución institucional muestra una predominancia privada (76%) y mayoritariamente universidades (52%), seguidas de instituciones universitarias/escuelas tecnológicas (36%). La presencia de hubs principales en Bogotá y Antioquia indica concentración geográfica en estos departamentos, con un 69.23% de los programas en solo tres regiones, reflejando baja dispersión geográfica. Los hubs secundarios en Valle del Cauca y Atlántico aportan un nivel medio de participación. Esto sugiere una concentración de oferta académica en áreas urbanas clave, limitando la presencia en otras regiones del país y evidenciando una distribución centralizada en los principales centros económicos y académicos.",
+      "insights_clave": [
+        "La distribución institucional muestra una predominancia privada (76%) y mayoritariamente universidades (52%), seguidas de instituciones universitarias/escuelas tecnológicas (36%). La presencia de hubs principales en Bogotá y Antioquia indica concentración geográfica en estos departamentos, con un 69.23% de los programas en solo tres regiones, reflejando baja dispersión geográfica. Los hubs secundarios en Valle del Cauca y Atlántico aportan un nivel medio de participación. Esto sugiere una concentración de oferta académica en áreas urbanas clave, limitando la presencia en otras regiones del país y evidenciando una distribución centralizada en los principales centros económicos y académicos."
+      ]
+    },
+    "recomendaciones_institucion": [
+      "Solo 0.0% acreditadas. Priorizar con acreditadas.",
+      "26 departamentos sin cobertura. Oportunidad de expansión."
+    ]
+  },
   "sintesis": {
-    "programa": "Ingenieria Agricola",
-    "denominacion_oficial": "Ingeniería Agrícola",
-    "resumen_ejecutivo": "Resumen Ejecutivo del Programa de Ingeniería Agrícola\n\nEl programa de Ingeniería Agrícola, también denominado Ingeniería Agrícola, tiene como objetivo formar profesionales altamente capacitados para diseñar, gestionar y optimizar sistemas agrícolas sostenibles y tecnológicamente innovadores. En un contexto global de creciente demanda de alimentos, recursos naturales limitados y desafíos ambientales, la carrera responde a la necesidad de ingenieros especializados en la aplicación de conocimientos científicos y tecnológicos en el sector agrícola.\n\nEl plan de estudios combina fundamentos en ciencias básicas, ingeniería y ciencias agrícolas, promoviendo habilidades en gestión de recursos hídricos, maquinaria agrícola, manejo de suelos, agroindustria y tecnologías de información aplicadas a la agricultura. La formación se complementa con prácticas en campo, proyectos de investigación y alianzas con el sector productivo, garantizando una formación integral y orientada a la innovación.\n\nEl programa busca contribuir al desarrollo sostenible del sector agrícola, fomentando la adopción de prácticas eficientes y responsables que aseguren la productividad y la conservación del medio ambiente. Además, prepara a los egresados para afrontar los retos del cambio climático, la seguridad alimentaria y la innovación tecnológica en el ámbito agrícola.\n\nCon un enfoque en la formación de ingenieros con visión integral, ética profesional y capacidad de liderazgo, el programa de Ingeniería Agrícola aspira a ser un referente en la formación de profesionales que impulsen el progreso agrícola y rural, promoviendo un desarrollo económico y social sustentable en la región y el país.",
+    "programa": "Ingenieria de Datos",
+    "denominacion_oficial": "Ingeniería de Datos",
+    "resumen_ejecutivo": "Resumen Ejecutivo del Programa de Ingeniería de Datos\n\nEl programa de Ingeniería de Datos, denominado oficialmente como Ingeniería de Datos, está diseñado para formar profesionales altamente capacitados en la gestión, procesamiento y análisis de grandes volúmenes de información. En un contexto donde la transformación digital impulsa la innovación en diversos sectores, este programa responde a la creciente demanda de expertos en tecnologías de datos, inteligencia artificial y aprendizaje automático.\n\nEl plan de estudios combina fundamentos teóricos con aplicaciones prácticas, abarcando áreas como bases de datos, arquitectura de datos, ingeniería de software, minería de datos, y análisis predictivo. Además, fomenta habilidades en programación, gestión de proyectos y trabajo en equipo, esenciales para afrontar los desafíos del entorno laboral actual.\n\nEl programa se orienta a formar ingenieros capaces de diseñar y mantener infraestructuras de datos eficientes, implementar soluciones analíticas y contribuir a la toma de decisiones estratégicas en organizaciones públicas y privadas. La formación se complementa con alianzas con la industria, permitiendo a los estudiantes acceder a prácticas profesionales y proyectos reales que fortalecen su perfil profesional.\n\nCon un enfoque en innovación y sostenibilidad, el programa de Ingeniería de Datos busca posicionarse como un referente en la formación de talento especializado, promoviendo la investigación y el desarrollo de soluciones tecnológicas que aporten al crecimiento económico y social del país. La graduación de estos profesionales contribuirá a potenciar la competitividad y la transformación digital en diversos sectores productivos.",
     "hallazgos_principales": [
-      "La variación en denominaciones puede generar confusión en el mercado, por lo que una denominación estandarizada facilitará el posicionamiento y reconocimiento.",
-      "Palabras emergentes: transformación digital, sostenibilidad",
-      "Se encontraron 3 variaciones del programa"
+      "Alta competencia y saturación en el mercado, con poca diferenciación clara entre programas",
+      "Oportunidad de posicionarse con un enfoque en innovación y alianzas estratégicas",
+      "Tendencias emergentes: Inteligencia Artificial aplicada a la ingeniería de datos, Automatización y aprendizaje automático, Big Data y análisis en tiempo real",
+      "Hub geográfico principal: Bogota, D.C. (30.77% de la oferta)",
+      "Se encontraron 10 variaciones del programa",
+      "0.0% de instituciones oferentes están acreditadas"
+    ],
+    "hallazgos_institucionales": [
+      "La distribución institucional muestra una predominancia privada (76%) y mayoritariamente universidades (52%), seguidas de instituciones universitarias/escuelas tecnológicas (36%). La presencia de hubs principales en Bogotá y Antioquia indica concentración geográfica en estos departamentos, con un 69.23% de los programas en solo tres regiones, reflejando baja dispersión geográfica. Los hubs secundarios en Valle del Cauca y Atlántico aportan un nivel medio de participación. Esto sugiere una concentración de oferta académica en áreas urbanas clave, limitando la presencia en otras regiones del país y evidenciando una distribución centralizada en los principales centros económicos y académicos."
     ],
     "recomendaciones": [
-      "Clasificar como: Pregrado",
-      "Incorporar términos: transformación digital, sostenibilidad",
+      "Clasificar programa como: Maestría",
+      "Alinear curricula con tendencias emergentes: Inteligencia Artificial aplicada a la ingeniería de datos, Automatización y aprendizaje automático",
       "Actualizar denominación en sistemas académicos",
       "Revisar equivalencias internacionales"
     ],
+    "recomendaciones_institucionales": [
+      "Solo 0.0% acreditadas. Priorizar con acreditadas.",
+      "26 departamentos sin cobertura. Oportunidad de expansión."
+    ],
+    "hub_geograficos_principales": [
+      {
+        "departamento": "Bogota, D.C.",
+        "cantidad_programas": "8",
+        "porcentaje": "30.77",
+        "nivel": "Alto"
+      },
+      {
+        "departamento": "Antioquia",
+        "cantidad_programas": "7",
+        "porcentaje": "26.92",
+        "nivel": "Alto"
+      }
+    ],
+    "institucion_referente": {
+      "nombre": "Universidad Pontificia Bolivariana",
+      "tipo": "Universidad",
+      "sector": "Privado",
+      "acreditada": "False",
+      "municipio": "Medellin",
+      "departamento": "Antioquia",
+      "score": "2"
+    },
+    "oportunidades_expansion": [
+      {
+        "tipo": "Expansión",
+        "departamento": "Santander",
+        "potencial": "Oportunidad de expansión",
+        "programas_actuales": "1"
+      },
+      {
+        "tipo": "Expansión",
+        "departamento": "Boyaca",
+        "potencial": "Oportunidad de expansión",
+        "programas_actuales": "1"
+      },
+      {
+        "tipo": "Expansión",
+        "departamento": "Tolima",
+        "potencial": "Oportunidad de expansión",
+        "programas_actuales": "1"
+      }
+    ],
     "proximos_pasos": [
       "Validar denominación con expertos",
-      "Implementar cambios sugeridos",
+      "Realizar visitas a instituciones referentes",
+      "Evaluar oportunidades de expansión en regiones identificadas",
       "Monitorear tendencias periódicamente"
     ]
   },
-  "programa": "Ingenieria Agricola",
-  "timestamp": "2025-11-12 20:29:15"
+  "programa": "Ingenieria de Datos",
+  "timestamp": "2025-11-12 20:51:52"
 }

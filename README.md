@@ -1,103 +1,168 @@
-# Análisis de Oportunidad de Programas Académicos SNIES
+# 📚 Análisis SNIES - Sistema Multi-Agente
 
-Proyecto de análisis de programas académicos colombianos utilizando datos SNIES, con un sistema multi-agente para análisis de tendencias y denominaciones.
+Aplicación inteligente para analizar programas académicos colombianos usando inteligencia artificial y datos del SNIES (Sistema Nacional de Información de Educación Superior).
 
-## 👥 Equipo
+## 🎯 ¿Qué hace?
 
-- **Estudiante 1**
-- **Estudiante 2**
+Busca un programa académico y proporciona:
 
-## 📋 Descripción
+- **Denominaciones normalizadas** - Estandariza el nombre del programa
+- **Tendencias del mercado** - Detecta palabras emergentes y en declive
+- **Análisis de instituciones** - Identifica dónde se ofrece y quiénes lo ofertan
+- **Oportunidades geográficas** - Hubs de concentración y zonas sin cobertura
+- **Recomendaciones** - Basadas en datos del mercado
 
-Este proyecto reproduce un reporte profesional de "Análisis de Oportunidad" para un programa académico universitario colombiano. Utiliza:
+Todo con resultados descargables en **Excel** y **PowerPoint**.
 
-1. **Análisis de datos SNIES** - Procesamiento de tablas de programas, instituciones y estudiantes
-2. **Sistema de agentes** - Análisis inteligente de denominación y tendencias de palabras
-3. **Generación automática** - Creación de presentación PowerPoint profesional
+---
 
-## 🏗️ Estructura del Proyecto
+## 🚀 Instalación Rápida
 
-```
-trabajo-final-snies/
-├── src/
-│   ├── lector_tablas_snies.py      # Carga y procesa datos SNIES
-│   ├── agentes/
-│   │   ├── agente_denominacion.py  # Analiza nombres de programas
-│   │   ├── agente_tendencias.py    # Detecta tendencias de palabras
-│   │   ├── agente_busqueda.py      # Busca información relevante
-│   │   └── coordinador.py          # Orquesta los agentes
-│   ├── analisis/
-│   │   ├── procesador_texto.py     # NLP y análisis de texto
-│   │   └── generador_graficas.py   # Crea visualizaciones
-│   └── presentacion/
-│       └── generador_powerpoint.py # Genera el reporte final
-├── notebooks/
-│   └── exploracion.ipynb           # Notebooks de experimentación
-├── data/                           # Datos (si aplica)
-├── output/                         # Salidas (PowerPoint, gráficas)
-├── tests/                          # Tests unitarios
-├── docs/                           # Documentación
-├── requirements.txt
-└── README.md
-```
-
-## 🚀 Instalación
-
-1. **Clonar repositorio**
+### 1. Clonar/Descargar el proyecto
 ```bash
-git clone <tu-repositorio>
-cd trabajo-final-snies
+git clone <url-repositorio>
+cd Multi-Agent-Project
 ```
 
-2. **Crear ambiente virtual**
+### 2. Crear ambiente virtual
 ```bash
 python -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
 ```
 
-3. **Instalar dependencias**
+### 3. Instalar dependencias
 ```bash
 pip install -r requirements.txt
+pip install streamlit openpyxl
 ```
 
-## 📊 Uso
+### 4. Configurar credenciales
+Crea archivo `.env` en la raíz del proyecto:
+```
+AZURE_OPENAI_API_KEY=tu_clave_aqui
+```
 
-### Ejecutar análisis completo
+### 5. Ejecutar la aplicación
+```bash
+streamlit run app.py
+```
+
+La aplicación se abrirá en `http://localhost:8501`
+
+---
+
+## 📖 Cómo Usar
+
+1. **Ingresa un programa** - Escribe en el cuadro de búsqueda
+   - Ej: "Ingeniería de Datos", "Maestría Administración"
+
+2. **Haz clic en Buscar** - El sistema analiza automáticamente
+
+3. **Ver resultados** en 4 pestañas:
+   - 📊 **Resumen** - Métricas y hallazgos principales
+   - 🏫 **Instituciones** - Análisis de oferentes
+   - 📈 **Tendencias** - Palabras emergentes
+   - 💾 **Descargar** - Excel y PowerPoint
+
+4. **Descarga los resultados** en los formatos que necesites
+
+---
+
+## 🤖 Cómo Funciona
+
+```
+1. BÚSQUEDA
+   └─ Encuentra programas equivalentes por similitud
+
+2. ENRIQUECIMIENTO
+   └─ Carga datos completos de SNIES
+
+3. AGENTES IA
+   ├─ Agente Denominación → Normaliza nombres
+   ├─ Agente Tendencias → Detecta patrones del mercado
+   └─ Agente Geografía → Analiza ubicación e instituciones
+
+4. RESULTADOS
+   └─ Presentación interactiva + Descarga (Excel, PowerPoint)
+```
+
+---
+
+## 📊 Resultados Disponibles
+
+### En la Aplicación (Streamlit)
+- Métricas interactivas
+- Tablas y gráficos
+- Hallazgos y recomendaciones
+
+### Excel
+6 hojas con datos completos:
+- Resumen general
+- Denominaciones encontradas
+- Tendencias nacionales e internacionales
+- Análisis de instituciones
+- Hubs geográficos
+- Recomendaciones
+
+### PowerPoint
+Presentación profesional con:
+- Portada y tabla de contenidos
+- Análisis completo
+- Gráficas y tablas
+- Conclusiones y recomendaciones
+
+---
+
+## 🔧 Requisitos
+
+- Python 3.11+
+- Azure OpenAI API key
+- 10GB de RAM disponible
+- Conexión a internet (primera ejecución)
+
+---
+
+## ⚡ Quick Start
 
 ```bash
-python src/main.py --programa "DOCTORADO CIENCIAS SOCIALES"
+# 1. Setup
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+pip install streamlit openpyxl
+
+# 2. Configurar .env
+echo "AZURE_OPENAI_API_KEY=tu_clave" > .env
+
+# 3. Ejecutar
+streamlit run app.py
+
+# 4. Abrir navegador
+# http://localhost:8501
 ```
 
-### Ejecutar solo agentes
+---
 
-```bash
-python src/agentes/coordinador.py
+## 📁 Estructura del Proyecto
+
+```
+Multi-Agent-Project/
+├── app.py                          # App Streamlit
+├── src/
+│   ├── main.py                    # Script principal
+│   ├── lector_tablas_snies.py     # Carga datos SNIES
+│   ├── lector_datos_enriquecidos.py
+│   ├── agentes/
+│   │   ├── coordinador.py         # Orquesta agentes
+│   │   ├── agente_denominacion.py
+│   │   ├── agente_tendencias.py
+│   │   ├── agente_instituciones_geografia.py
+│   │   └── llm_handler.py         # Azure OpenAI
+│   └── presentacion/
+│       └── generador_powerpoint.py
+├── requirements.txt
+├── .env                           # Credenciales
+└── output/                        # Resultados generados
 ```
 
-### Generar presentación
-
-```bash
-python src/presentacion/generador_powerpoint.py
-```
-
-## 📈 Funcionalidades
-
-- ✅ Carga de datos SNIES desde parquets remotos
-- ✅ Búsqueda y filtrado de programas equivalentes
-- ✅ Gráficas de tendencias temporales
-- ✅ Análisis de denominación de programas
-- ✅ Detección de tendencias de palabras clave
-- ✅ Comparación nacional e internacional
-- ✅ Generación automática de PowerPoint profesional
-
-## 🔗 Referencias
-
-- [Repositorio base](https://github.com/robertohincapie/agentes1.git)
-- [Datos SNIES](https://www.mineducacion.gov.co/snies/)
-
-## 📝 Notas
-
-- Fecha de entrega: 14 de noviembre 2025
-- Trabajo en parejas
-- Entrega: Repositorio en GitHub
-
+---

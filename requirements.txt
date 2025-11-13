@@ -33,3 +33,6 @@ tqdm>=4.66.0
 
 # Data formats
 pyarrow>=12.0.0
+
+streamlit
+openpyxl
